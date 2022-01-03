@@ -14,6 +14,7 @@ const deleteContact = (id) => {
 }
 
 
+
   return (
     <div className="container">
         <div className="row">
@@ -47,6 +48,12 @@ const deleteContact = (id) => {
                         className="btn btn-sm btn-primary mr-1"
                       >
                         Edit
+                      </Link>
+                      <Link
+                        to={`/view/${contact.id}`}
+                        className="btn btn-sm btn-secondary "
+                      >
+                        ViewContact
                       </Link>
                       <button
                         type="button"
